@@ -60,7 +60,7 @@ To create a React app, you usually need to worry about three things
 * For example, the value of the counter.
 
 ```javascript
-  {
+{
     count: 1
 }
 ```
@@ -80,7 +80,7 @@ To create a React app, you usually need to worry about three things
 ```jsx
 import React from "react";
 
-function App() {
+function ClickBtn() {
     const [count, setCount] = React.useState(0)
 
     return (
@@ -98,7 +98,7 @@ function Button(props) {
     return <button onClick={onButtonClick}>Counter {props.count}</button>
 }
 
-export default App
+export default ClickBtn
 ```
 
 ### This is much better way to write the same code
@@ -106,7 +106,7 @@ export default App
 ```jsx
 import React from 'react'
 
-function App() {
+function ClickBtn() {
 
     const [count, setCount] = React.useState(0)
 
@@ -121,6 +121,15 @@ function App() {
     )
 }
 
-export default App
+export default ClickBtn
 
+```
+
+## Let's create a To-Do ClickBtn
+To-Do application
+```jsx
+// todo
+{
+    todos: [{title:"todo1", description: "First Todo", complete: "False"}]
+}
 ```
